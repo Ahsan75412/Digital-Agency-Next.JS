@@ -27,7 +27,7 @@ const NavBar = () => {
                     
                     </ul>
                 </div>
-                <a className="font-bold text-xl">Digital<span className="text-[#F55F1D]">Agency</span></a>
+                <a className="font-bold text-xl pl-5">Digital<span className=" text-[#F55F1D]">Agency</span></a>
             </div>
             <div className="navbar-center hidden md:flex">
                 <ul className="menu menu-horizontal px-1 font-semibold">

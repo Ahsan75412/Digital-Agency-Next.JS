@@ -1,4 +1,5 @@
 import Link from "next/link";
+import BrandList from "./BrandList";
 
 
 
@@ -21,10 +22,10 @@ const Hero = async () => {
     const data = await getData();
     console.log(data.title)
     return (
-        <div className="hero w-full min-h-screen bg-[#D7F5DC]">
-            <div className="hero-content  flex-col lg:flex-row ">
+        <div className="hero w-full min-h-screen bg-[#D7F5DC] lg:pb-52">
+            <div className="hero-content max-w-5xl flex-col lg:flex-row ">
                 <div className="text-center md:w-[600px] lg:text-left ">
-                    <h1 className="text-5xl font-bold">
+                    <h1 className="text-4xl font-bold">
                         {data.title}
                     </h1>
                     <p className="py-6">
@@ -36,7 +37,7 @@ const Hero = async () => {
                     href=''>Get Started</Link>
                 </div>
             
-                <div className="shrink-0 w-full lg:w-[606px] px-4 ">
+                <div className="shrink-0 max-w-lg w-full  lg:w-[606px] px-4 ">
                     <div className="flex lg:flex-row">
                         <div>
                             <img
@@ -83,6 +84,7 @@ const Hero = async () => {
                     </div>
                 </div>
             </div>
+            
         </div>
     );
 };
