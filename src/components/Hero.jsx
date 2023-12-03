@@ -1,5 +1,5 @@
 import Link from "next/link";
-import BrandList from "./BrandList";
+
 
 
 
@@ -22,7 +22,8 @@ const Hero = async () => {
     const data = await getData();
     console.log(data.title)
     return (
-        <div className="hero w-full min-h-screen bg-[#D7F5DC] lg:pb-52">
+        // lg:pb-52
+        <div className="hero w-full min-h-screen bg-[#D7F5DC] ">
             <div className="hero-content max-w-5xl flex-col lg:flex-row ">
                 <div className="text-center md:w-[600px] lg:text-left ">
                     <h1 className="text-4xl font-bold">

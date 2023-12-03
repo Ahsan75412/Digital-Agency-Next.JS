@@ -11,7 +11,10 @@ async function getData() {
 const BrandList = async () => {
     const data = await getData();
     return (
-        <section className="md:-my-28 bg-base-100 p-7">
+        // md:-my-28
+        <div className="h-[150px] bg-[#D7F5DC]">
+            
+        <section className=" bg-[#F8FFF9] p-7">
             <div className="container mx-auto px-4 text-center">
                 <div className="flex flex-wrap -mx-2">
                     {
@@ -28,6 +31,7 @@ const BrandList = async () => {
                 </div>
             </div>
         </section>
+        </div>
     );
 };
 
