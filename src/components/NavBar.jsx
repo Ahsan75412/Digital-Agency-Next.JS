@@ -5,7 +5,7 @@ import Link from "next/link";
 const NavBar = () => {
 
     const navOptions = <>
-        <li><Link href="/home"> Home </Link></li>
+        <li><Link href="/"> Home </Link></li>
         <li><Link href="/team"> Team </Link></li>
         <li><Link href="/service"> Service </Link></li>
         <li><Link href="/projects"> Projects </Link></li>
@@ -16,7 +16,7 @@ const NavBar = () => {
     </>
     return (
         // max-w-screen-xl mx-auto
-        <div className="navbar bg-[#D7F5DC]  max-w-screen-xl mx-auto"> 
+        <div className="navbar fixed z-10 top-0  bg-opacity-90 bg-[#D7F5DC]  max-w-screen-xl mx-auto py-5"> 
             <div className="navbar-start">
                 <div className="dropdown">
                     <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
