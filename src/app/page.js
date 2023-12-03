@@ -1,4 +1,5 @@
 import BrandList from "@/components/BrandList";
+import FeaturedProjects from "@/components/FeaturedProjects";
 import Hero from "@/components/Hero";
 import NavBar from "@/components/NavBar";
 import Stats from "@/components/Stats";
@@ -11,6 +12,7 @@ export default function Home() {
        <BrandList></BrandList>
        <WorkList></WorkList>
        <Stats></Stats>
+       <FeaturedProjects></FeaturedProjects>
 
       </>
   )
