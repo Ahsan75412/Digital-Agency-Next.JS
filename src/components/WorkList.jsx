@@ -20,8 +20,8 @@ const WorkList = async () => {
     const data = await getData();
     return (
         <div className="pt-60 md:pt-10 bg-[#FFFFFF]">
-            <h2 className="text-xl uppercase pl-6 font-medium text-[#20B15A]">Work List</h2>
-            <p className="text-2xl pb-5 pl-6 font-bold ">We provide the Perfect Solution to your business growth</p>
+            <h2 className="text-xl uppercase pt-12 pl-6 font-medium text-[#20B15A]">Work List</h2>
+            <p className="text-2xl pb-12 pl-6 font-bold ">We provide the Perfect Solution to <br /> your business growth</p>
 
             <div className="md:flex ">
                 {

@@ -4,7 +4,7 @@ import React from 'react';
 
 const SubscribeSection = () => {
     return (
-        <div className="bg-[#FFFFFF] py-24">
+        <div className="bg-[#FFFFFF] py-28">
             <div className="max-w-4xl mx-auto text-center">
                 <h2 className="text-3xl font-bold mb-4">Subscribe to get the latest <br /> news about us</h2>
                 <p className="text-gray-600 mb-6">Stay up-to-date with our latest news and updates.</p>

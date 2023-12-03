@@ -15,6 +15,7 @@ export default function Home() {
        <Stats></Stats>
        <FeaturedProjects></FeaturedProjects>
        <SubscribeSection></SubscribeSection>
+       
 
       </>
   )
