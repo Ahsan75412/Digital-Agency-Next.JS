@@ -32,9 +32,9 @@ const WorkList = async () => {
                             <div key={i} className="mb-8 w-full lg:w-1/3 px-4 text-align">
                                 <span className="relative mb-6 lg:mb-10 mx-auto flex w-16 h-16 items-center justify-center rounded-4xl text-black text-2xl
                                  bg-[#D7F5DC] rounded-xl mt-5">
-                                    {item.id === 1 && <FaChartArea />}
-                                    {item.id === 2 && <MdAddBusiness />}
-                                    {item.id === 3 && <PiBagSimpleFill />}
+                                    {item.id === 1 && <FaChartArea className="w-8 h-12"/>}
+                                    {item.id === 2 && <MdAddBusiness className="w-8 h-12"/>}
+                                    {item.id === 3 && <PiBagSimpleFill className="w-8 h-12"/>}
                                 </span>
                                 <h3 className="mb-4 text-2xl font-bold">{item.title}</h3>
                                 <p className="text-gray-500 leading-loose">
