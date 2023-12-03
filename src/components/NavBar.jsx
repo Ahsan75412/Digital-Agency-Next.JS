@@ -10,7 +10,7 @@ const NavBar = () => {
         <li><Link href="/services"> Service </Link></li>
         <li><Link href="/projects"> Projects </Link></li>
         <li><Link href="/testimonials"> Testimonials </Link></li>
-        <li className="btn btn-outline btn-sm"><Link href="/login">Login</Link></li>
+        <li className="btn btn-outline btn-sm ml-5"><Link href="/login">Login</Link></li>
         <li className="btn btn-sm ml-3 bg-[#20B15A] text-white"><Link href="/register">Register</Link></li>
     
     </>
@@ -30,7 +30,7 @@ const NavBar = () => {
                 <a className="font-bold text-xl pl-5">Digital<span className=" text-[#F55F1D]">Agency</span></a>
             </div>
             <div className="navbar-center hidden md:flex">
-                <ul className="menu menu-horizontal px-1 font-semibold">
+                <ul className="menu menu-horizontal px-1 font-semibold ml-2">
                     {navOptions}
                 </ul>
             </div>

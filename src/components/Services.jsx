@@ -17,8 +17,8 @@ const Services = async () => {
     const data = await getData();
     return (
         <div className='mt-32 bg-[#FFFFFF] '>
-            <h2 className=' text-xl md:text-3xl text-[#20B15A] pl-10'>Our All Services</h2>
-            <p className=' text-xl md:text-3xl text-gray-600 pl-10'>We Provide BestWeb design services</p>
+            <h2 className='font-bold text-xl md:text-2xl text-[#20B15A] pl-10'>Our All Services</h2>
+            <p className='font-semibold text-xl md:text-xl text-gray-600 pl-10'>We Provide BestWeb design services</p>
 
             <section className='grid grid-cols-1 md:grid-cols-2 gap-8 md:mx-10 md:pt-5'>
 

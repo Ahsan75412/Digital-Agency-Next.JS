@@ -20,8 +20,11 @@ const WorkList = async () => {
     const data = await getData();
     return (
         <div className="pt-60 md:pt-10 bg-[#FFFFFF]">
-            <h2 className="text-xl uppercase pt-12 pl-6 font-medium text-[#20B15A]">Work List</h2>
-            <p className="text-2xl pb-12 pl-6 font-bold ">We provide the Perfect Solution to <br /> your business growth</p>
+
+            <h2 className=' text-xl md:text-3xl font-bold text-[#20B15A] pl-10'>Work List</h2>
+            <p className=' text-xl font-bold  md:text-2xl text-gray-600 pl-10 pb-10'>We provide the Perfect Solution to <br />your business growth</p>
+
+       
 
             <div className="md:flex ">
                 {
@@ -32,11 +35,11 @@ const WorkList = async () => {
                             <div key={i} className="mb-8 w-full lg:w-1/3 px-4 text-align">
                                 <span className="relative mb-6 lg:mb-10 mx-auto flex w-16 h-16 items-center justify-center rounded-4xl text-black text-2xl
                                  bg-[#D7F5DC] rounded-xl mt-5">
-                                    {item.id === 1 && <FaChartArea className="w-8 h-12"/>}
-                                    {item.id === 2 && <MdAddBusiness className="w-8 h-12"/>}
-                                    {item.id === 3 && <PiBagSimpleFill className="w-8 h-12"/>}
+                                    {item.id === 1 && <FaChartArea className="w-8 h-12" />}
+                                    {item.id === 2 && <MdAddBusiness className="w-8 h-12" />}
+                                    {item.id === 3 && <PiBagSimpleFill className="w-8 h-12" />}
                                 </span>
-                                <h3 className="mb-4 text-2xl font-bold">{item.title}</h3>
+                                <h3 className="mb-4 text-xl font-bold">{item.title}</h3>
                                 <p className="text-gray-500 leading-loose">
                                     {item.des}
                                 </p>

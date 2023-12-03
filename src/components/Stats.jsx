@@ -59,7 +59,7 @@ const Stats = async () => {
             <div className="stats shadow ml-3">
                 <div className="stat">
                     <span className="relative mb-6 lg:mb-10 mx-auto flex w-16 h-16 items-center justify-center rounded-4xl text-black text-2xl bg-[#D7F5DC] rounded-xl mt-5">
-                        <GrProjects className="w-10 h-12" />
+                        <GrProjects className="w-8 h-8" />
                     </span>
                     <div className="stat-value text-center font-bold text-3xl">{data.projects}</div>
                     <div className="text-xl text-center font-semibold">Projects</div>
