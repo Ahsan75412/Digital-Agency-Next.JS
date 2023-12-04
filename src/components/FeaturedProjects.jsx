@@ -9,20 +9,22 @@ async function getData() {
     return res.json();
 }
 
+
+
 const FeaturedProjects = async () => {
     const data = await getData();
 
     return (
-        <div className="bg-[#F0FDF4] p-6 lg:py-16">
-                 <h2 className=' text-xl md:text-3xl font-bold text-[#20B15A] md:pl-2'>Featured Projects</h2>
-            <p className=' text-xl font-bold  md:text-2xl text-gray-600 md:pl-2 md:pb-14'>We provide the Perfect Solution to your <br /> business growth</p>
+        <div className="bg-[#F0FDF4] p-6 py-24 w-screen px-8 md:px-20 ">
+                 <h2 className=' text-xl md:text-2xl font-bold text-[#20B15A] md:pl-2 pb-3'>Featured Projects</h2>
+            <p className=' text-xl max-w-2xl font-bold  text-gray-600 md:pl-2 pb-16'>We provide the Perfect Solution to your business growth</p>
             
 
             <section className="flex flex-col lg:flex-row lg:space-x-4">
                 <div className="mb-4 lg:mb-0 lg:w-2/3">
                     <Link target="_blank" href="">
                         <img
-                            className="h-[300px] lg:h-[531px] w-full mx-auto object-cover rounded-xl transition-transform transform hover:scale-105"
+                            className="h-[300px] lg:h-[531px] w-full mx-auto object-cover rounded-xl transition-transform transform hover:scale-100"
                             src={data[0]['image']}
                             alt=""
                         />
@@ -31,7 +33,7 @@ const FeaturedProjects = async () => {
                     <p className="text-lg font-bold ">{data[0]['title']}</p>
                 </div>
                 <div className="lg:w-1/3">
-                    <div className="flex flex-wrap -mx-2 lg:-mx-2">
+                    <div className="flex flex-wrap -mx-2 ">
                         {data.slice(1, 5).map((item, i) => {
                             const formattedDate = format(new Date(item['created_at']), 'MMMM dd, yyyy');
                             return (

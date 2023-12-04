@@ -22,7 +22,7 @@ async function getData() {
 const Stats = async () => {
     const data = await getData();
     return (
-        <div className="bg-[#FFFFFF] grid gap-4 md:grid-cols-3  lg:grid-cols-4 py-12">
+        <div className="bg-[#FFFFFF] grid gap-4 md:grid-cols-3  lg:grid-cols-4 pb-24 w-screen px-6  md:px-20" >
             <div className="stats shadow ">
                 <div className="stat">
                     <span className="relative mb-6 lg:mb-10 mx-auto flex w-16 h-16 items-center justify-center rounded-4xl text-black text-2xl bg-[#D7F5DC] rounded-xl mt-5">

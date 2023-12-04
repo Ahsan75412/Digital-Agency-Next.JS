@@ -16,7 +16,7 @@ async function getData() {
 const Services = async () => {
     const data = await getData();
     return (
-        <div className='mt-32 bg-[#FFFFFF] '>
+        <div className='mt-32 bg-[#FFFFFF] w-screen px-8 md:px-20'>
             <h2 className='font-bold text-xl md:text-2xl text-[#20B15A] pl-10'>Our All Services</h2>
             <p className='font-semibold text-xl md:text-xl text-gray-600 pl-10'>We Provide BestWeb design services</p>
 

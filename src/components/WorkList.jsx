@@ -19,25 +19,28 @@ async function getData() {
 const WorkList = async () => {
     const data = await getData();
     return (
-        <div className="pt-60 md:pt-10 bg-[#FFFFFF]">
+        <section className="pt-60 md:pt-40 pb-24 md:pb-40  bg-[#FFFFFF] w-screen px-8 md:px-20">
 
-            <h2 className=' text-xl md:text-3xl font-bold text-[#20B15A] pl-10'>Work List</h2>
-            <p className=' text-xl font-bold  md:text-2xl text-gray-600 pl-10 pb-10'>We provide the Perfect Solution to <br />your business growth</p>
+            <h2 className=' text-xl md:text-2xl font-bold text-[#20B15A] pb-4'>Work List</h2>
+            <p className=' text-xl font-bold  md:text-xl text-gray-600 pb-16 md:pb-20 '>We provide the Perfect Solution to your business growth</p>
 
        
 
-            <div className="md:flex ">
+            <div className="md:flex  ">
                 {
                     data.map((item, i) => {
+                        // relative mb-6 lg:mb-10 mx-auto flex w-16 h-16 items-center justify-center rounded-4xl text-black text-2xl
+                        // bg-[#D7F5DC] rounded-xl mt-5
 
-
+                        
+                        // shadow-xl
                         return (
-                            <div key={i} className="mb-8 w-full lg:w-1/3 px-4 text-align">
-                                <span className="relative mb-6 lg:mb-10 mx-auto flex w-16 h-16 items-center justify-center rounded-4xl text-black text-2xl
-                                 bg-[#D7F5DC] rounded-xl mt-5">
-                                    {item.id === 1 && <FaChartArea className="w-8 h-12" />}
-                                    {item.id === 2 && <MdAddBusiness className="w-8 h-12" />}
-                                    {item.id === 3 && <PiBagSimpleFill className="w-8 h-12" />}
+                            <div key={i} className=" card md:m-5 mt-5 w-full lg:w-1/3 px-4 text-align bg-base-100  p-10">
+                                <span className="  mb-6 lg:mb-10 rounded-xl bg-[#D7F5DC] w-16 h-16 flex items-center justify-self-start  ">
+                                    {item.id === 1 && <FaChartArea className="h-7 w-10 mx-auto 
+                                    md:mx-auto " />}
+                                    {item.id === 2 && <MdAddBusiness className="h-7 w-10 mx-auto md:mx-auto" />}
+                                    {item.id === 3 && <PiBagSimpleFill className="h-7 w-10 mx-auto md:mx-auto" />}
                                 </span>
                                 <h3 className="mb-4 text-xl font-bold">{item.title}</h3>
                                 <p className="text-gray-500 leading-loose">
@@ -54,8 +57,13 @@ const WorkList = async () => {
                 }
             </div>
 
-        </div>
+        </section>
     );
 };
 
 export default WorkList;
+
+
+
+
+

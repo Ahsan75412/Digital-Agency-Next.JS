@@ -10,13 +10,13 @@ const NavBar = () => {
         <li><Link href="/services"> Service </Link></li>
         <li><Link href="/projects"> Projects </Link></li>
         <li><Link href="/testimonials"> Testimonials </Link></li>
-        <li className="btn btn-outline btn-sm ml-5"><Link href="/login">Login</Link></li>
-        <li className="btn btn-sm ml-3 bg-[#20B15A] text-white"><Link href="/register">Register</Link></li>
+        <li className="btn btn-outline mb-5 btn-sm md:ml-5"><Link href="/login">Login</Link></li>
+        <li className="btn btn-sm md:ml-3 bg-[#20B15A] text-white"><Link href="/register">Register</Link></li>
     
     </>
     return (
         // max-w-screen-xl mx-auto
-        <div className="navbar fixed z-10 top-0 bg-opacity-90 bg-[#D7F5DC]  max-w-screen-xl mx-auto py-5"> 
+        <div className="navbar fixed z-10 top-0 bg-opacity-90 bg-[#D7F5DC] py-5 "> 
             <div className="navbar-start">
                 <div className="dropdown">
                     <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -27,7 +27,7 @@ const NavBar = () => {
                     
                     </ul>
                 </div>
-                <a className="font-bold text-xl pl-5">Digital<span className=" text-[#F55F1D]">Agency</span></a>
+                <a className="font-bold text-xl md:pl-10">Digital<span className=" text-[#F55F1D]">Agency</span></a>
             </div>
             <div className="navbar-center hidden md:flex">
                 <ul className="menu menu-horizontal px-1 font-semibold ml-2">

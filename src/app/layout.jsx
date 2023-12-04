@@ -21,7 +21,8 @@ export async function generateMetadata(){
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className='max-w-screen-xl mx-auto'>
+      {/* className='max-w-screen-xl mx-auto' */}
+      <body >
       <NextTopLoader color="#269669" height={3} speed={200} />
         <NavBar />
         {children}

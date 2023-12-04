@@ -5,12 +5,12 @@ import { FaFacebook, FaTwitter, FaInstagram } from 'react-icons/fa';
 
 const Footer = () => {
     return (
-        <footer className="bg-gray-800 text-white py-16 px-10">
+        <footer className="bg-gray-800 text-white py-24 px-10 ">
             <div className="container mx-auto flex flex-wrap justify-between">
                 {/* Column 1 */}
                 <div className="w-full md:w-1/2 lg:w-1/3 mb-8 md:mb-0">
                     <h3 className="text-2xl font-bold mb-4">Digital <span className="text-[#F55F1D]">Agency</span></h3>
-                    <p className="mb-4">Some text about the company. Web logo and social icons can go here.</p>
+                    <p className="mb-4 w-80">Some text about the company. Web logo and social icons can go here.</p>
                     <div className="flex space-x-4">
                         <a href="#" target="_blank" rel="noopener noreferrer">
                             <FaFacebook className="text-xl" />
@@ -25,7 +25,7 @@ const Footer = () => {
                 </div>
 
                 {/* Column 2 */}
-                <div className="w-full md:w-1/2 lg:w-1/3 mb-8 md:mb-0 px-8">
+                <div className="w-full md:w-1/2 lg:w-1/3 mb-8 md:mb-0 ">
                     <h3 className="text-2xl font-bold mb-4">Quick Links</h3>
                     <ul>
                         <li>
@@ -41,6 +41,7 @@ const Footer = () => {
                             <a href="#">Contact</a>
                         </li>
                     </ul>
+                   
                 </div>
 
                 {/* Column 3 */}
